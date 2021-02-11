@@ -1,0 +1,36 @@
+{
+  "name": "polkawavebridge",
+  "version": "1.0.0",
+  "description": "Archival service for Poladot chain, using Arwave",
+  "main": "dist/src/Polkawave.js",
+  "scripts": {
+    "start": "npm run build && node dist/Polkawave.js livestream",
+    "build": "npm run depInstall && npm run cleanDist && npx tsc",
+    "cleanDist": "rm -rf dist",
+    "test": "",
+    "depInstall": "npm install",
+    "localInstall": "npm install -g"
+  },
+  "bin": {
+    "polkawave": "dist/Polkawave.js"
+  },
+  "author": "macros.deligator",
+  "license": "MIT",
+  "dependencies": {
+    "@polkadot/api": "^3.8.1",
+    "@typescript-eslint/eslint-plugin": "^2.22.0",
+    "@typescript-eslint/parser": "^2.22.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-no-only-tests": "^2.4.0",
+    "arweave": "^1.10.1",
+    "arweave-bundles": "^1.0.0",
+    "colors": "^1.4.0",
+    "commander": "^6.0.0",
+    "fs-jetpack": "^3.1.0",
+    "superagent": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.25",
+    "typescript": "^4.1.5"
+  }
+}

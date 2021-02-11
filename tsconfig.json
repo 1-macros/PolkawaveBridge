@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "es2015",
+    "module": "CommonJs",
+    "lib": ["esnext", "DOM"],
+    "strict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "isolatedModules": false,
+    "downlevelIteration": true,
+    "outDir": "./dist"
+  },
+  "exclude": ["node_modules", "tsconfig.json"],
+  "include": ["src/**/*.ts", "test/**/*.ts"]
+}
